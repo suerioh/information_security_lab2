@@ -6,6 +6,7 @@ from utils import str_to_bin_array
 from task1 import pmd_z, uniform_channel, bin_array_to_str
 from task2 import enc
 from task3 import dec
+from task4 import task4_results
 from task5 import bsc
 from task6 import ideal_sec_capacity
 
@@ -85,6 +86,14 @@ def main():
 
     print('y =', bin_array_to_str(y))
     print('d^ =', dec(bin_array_to_str(y)))
+
+
+
+
+    # ----------- TASK 4 - EMPIRICAL CALCULATIONS OF p(z|u) , p(z) , p(z,u) , I(z,u) -----------
+    mut_inf = task4_results()
+    print('\n----------- TASK 4 -----------')
+    print(mut_inf)
 
 
 
